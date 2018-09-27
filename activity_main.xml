@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/edit_text_window"
+            android:layout_width="340dp"
+            android:layout_height="272dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorAccent"
+            android:gravity="right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@color/colorText"
+            android:textSize="32dp" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btn_multiply"
+            android:background="#535353"
+            android:text="AC"
+            android:textColor="@color/colorText"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_equal"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_toEndOf="@+id/btn_multiply"
+            android:layout_toRightOf="@+id/btn_multiply"
+            android:background="#535353"
+            android:text="="
+            android:textColor="@color/colorText"
+            android:textSize="24sp"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/btn_divide"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_addition"
+            android:layout_toEndOf="@+id/btn_clear"
+            android:layout_toRightOf="@+id/btn_clear"
+            android:text="÷"
+            android:textAllCaps="false"
+            android:textColor="@color/colorText"
+            android:textSize="24sp"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/btn_0"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btn_equal"
+            android:text="0"
+            android:textColor="@color/colorText"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_1"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btn_equal"
+            android:layout_toEndOf="@+id/btn_clear"
+            android:layout_toRightOf="@+id/btn_clear"
+            android:text="1"
+            android:textColor="@color/colorText"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btn_equal"
+            android:layout_toLeftOf="@+id/btn_equal"
+            android:layout_toStartOf="@+id/btn_equal"
+            android:text="2"
+            android:textColor="@color/colorText"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_multiply"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_addition"
+            android:layout_toEndOf="@+id/btn_divide"
+            android:layout_toRightOf="@+id/btn_divide"
+            android:text="x"
+            android:textColor="@color/colorText"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_addition"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_subtraction"
+            android:layout_alignLeft="@+id/btn_equal"
+            android:layout_alignStart="@+id/btn_equal"
+            android:text="+"
+            android:textColor="@color/colorText"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_subtraction"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_equal"
+            android:layout_alignLeft="@+id/btn_equal"
+            android:layout_alignStart="@+id/btn_equal"
+            android:text="-"
+            android:textColor="@color/colorText"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
